@@ -1,0 +1,23 @@
+package com.hcl.Ex;
+
+public class ThrEx {
+	public void show(int x){
+		boolean flag =true;
+		if(x<0){
+			flag=false;
+			throw new NumberFormatException("Negative Numbers not allowed");
+		}
+		if(x==0){
+			flag=false;
+			throw new ArithmeticException("Zero is invalid");
+		}
+		if(x>0){
+			System.out.println(x);
+		}
+		
+	}
+	public static void main(String[] args) {
+		int n=12;
+	}
+
+}

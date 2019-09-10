@@ -1,0 +1,30 @@
+package com.hcl.project1;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CustomerDAO {
+	static List<Customer> lst = null;
+	static {
+		lst = new ArrayList<Customer>();
+	}
+	
+	public String addCustomerDao(Customer customer) {
+		lst.add(customer);
+		return "customer added successfully";
+	}
+	
+	public List<Customer> showCustomerDao() {
+		return lst;
+	}
+	
+	public Customer searchCustomerDao(int custId) {
+		Customer objcustomer = null;
+		for (Customer customer : lst) {
+			if (customer.getCustId() == custId) {
+				objcustomer = customer;
+			}
+		}
+		return objcustomer;
+	}
+}

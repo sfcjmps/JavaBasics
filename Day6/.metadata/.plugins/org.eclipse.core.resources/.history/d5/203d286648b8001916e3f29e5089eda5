@@ -1,0 +1,61 @@
+package com.hcl.project1;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class CustomerMain {
+	
+	public static void addCustomer(){
+		Customer objCustomer = new Customer();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Customer Id : ");
+		objCustomer.setCustId(Integer.parseInt(sc.nextLine()));
+		System.out.println("Enter Customer Name : ");
+		objCustomer.setCustName(sc.nextLine());
+		System.out.println("Enter Customer Annual Premium : ");
+		objCustomer.setAnnualPremium(Double.parseDouble(sc.nextLine()));
+		System.out.println("Enter Customer Modal Premium");
+		objCustomer.setModalPremium(Double.parseDouble(sc.nextLine()));
+		System.out.println("Enter Customer PaymentMode");
+		objCustomer.setPaymentMode(Integer.parseInt(sc.nextLine()));
+		CustomerBAL customer = new CustomerBAL();
+		try {
+			boolean res = customer.addCustomerBal(objCustomer);
+			if (res == true) {
+				System.out.println("Customer added");
+			}
+		} catch (CustomerException e) {
+			System.out.println(e.getMessage());
+		}
+		
+	}
+	
+	public static void showCustomer() {
+		CustomerBAL obj = new CustomerBAL();
+		List<Customer> lstcustomer = new ArrayList<Customer>();
+		for (Customer customer : lstcustomer) {
+			System.out.println(customer);
+		}
+	}
+	
+	public static void searchCustomer() {
+		int id;
+		System.out.println("Enter Customer id : ");
+		Scanner sc = new Scanner(System.in);
+		id = sc.nextInt();
+		CustomerBAL obj1 = new CustomerBAL();
+		Customer customer = obj1.searchCustomerBal(id);
+		if (customer != null) {
+			System.out.println(customer);
+		}
+		else {
+			System.out.println("Customer not found");
+		}
+	}
+	
+	public static void updateCustomer() {
+		Customer customer = new Customer();
+	}
+
+}

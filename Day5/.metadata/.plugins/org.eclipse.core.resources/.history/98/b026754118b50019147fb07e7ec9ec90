@@ -1,0 +1,11 @@
+package com.hcl.collections;
+
+public class Emp {
+	
+		int empno;
+		String name;
+		double basic;
+		
+
+
+}

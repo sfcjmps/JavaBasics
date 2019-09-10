@@ -1,0 +1,15 @@
+package com.hcl.quiz;
+
+public class MathLib {
+	public void power(int a,int b){
+		int sum=0;
+		for (int i=1;i<b;i++) {
+			sum=a*a;		}
+		System.out.println(sum);
+	}
+	public static void main(String[] args) {
+		new MathLib().power(3,2);
+		
+	}
+
+}

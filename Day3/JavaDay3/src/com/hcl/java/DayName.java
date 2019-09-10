@@ -1,0 +1,5 @@
+package com.hcl.java;
+
+enum DayName {
+  SUNDAY,MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,STAURDAY
+}

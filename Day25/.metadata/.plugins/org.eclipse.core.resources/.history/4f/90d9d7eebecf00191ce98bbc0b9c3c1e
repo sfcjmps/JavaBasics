@@ -1,0 +1,8 @@
+package com.hcl.hib;
+
+public class Room {
+	private String RoomID;
+	private String Type;
+	private String Status;
+	private int CostPerDay;
+}

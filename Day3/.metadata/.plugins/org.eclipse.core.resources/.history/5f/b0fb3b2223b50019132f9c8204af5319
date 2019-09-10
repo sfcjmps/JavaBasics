@@ -1,0 +1,30 @@
+package com.hcl.java;
+
+class Second extends First{
+	public void show(){
+//		super.show();
+		System.out.println("show method from derived class");
+	}
+}
+public class InhDemo {
+	public static void main(String[] args) {
+//		Second obj=new Second();
+//		obj.show();
+//		
+//		First obj1=new Second();
+//		obj1.show();
+		First ob1=new First();
+		Second obj2=new Second();
+		
+		First f1=(First)obj2;
+		f1.show();
+		
+		First f2=(Second)obj2;//derived object can be casted to base class
+		f2.show();
+		
+//    	Second f3=(Second)ob1;//base object cannot be casted to derived object
+//   		f3.show();
+	}
+	
+
+}

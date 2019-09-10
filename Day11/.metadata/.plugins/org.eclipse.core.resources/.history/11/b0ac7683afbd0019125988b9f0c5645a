@@ -1,0 +1,6 @@
+function show() {
+	var fn,ln;
+	fn = nameForm.firstName.value;
+	ln = nameForm.lastName.value;
+	nameForm.fullName.value = fn + " " + ln
+}

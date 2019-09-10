@@ -1,0 +1,7 @@
+package com.hcl.hib;
+
+public class MainProg {
+	public static void main(String[] args) {
+		
+	}
+}

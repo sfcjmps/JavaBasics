@@ -1,0 +1,38 @@
+package com.hcl.abs;
+abstract class Animal{
+	abstract void name();
+	abstract void type();
+}
+class Lion extends Animal{
+	@Override
+	void name() {
+		System.out.println("Name is Lion...");
+	}
+	@Override
+	void type() {
+		System.out.println("Its a Wild Animal");
+	}	
+}
+class Crocodile extends Animal{
+	@Override
+	void name() {
+		System.out.println("NAme is Crocodile...");
+	}
+	@Override
+	void type() {
+		System.out.println("Its a Water Animal");
+	}
+}
+public class AbsTest {
+	public static void main(String[] args) {
+		Animal[] arr1=new Animal[]{
+				new Lion(),
+				new Crocodile()
+		};
+		for (Animal animal : arr1) {
+//			System.out.println(animal);
+			animal.name();
+			animal.type();
+		}
+	}
+}

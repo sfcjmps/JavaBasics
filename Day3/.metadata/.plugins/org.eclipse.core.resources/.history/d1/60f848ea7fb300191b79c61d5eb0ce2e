@@ -1,0 +1,13 @@
+package com.hcl.java;
+enum test{
+	A,B,X,Y,P,C,N;
+	private test(){
+		System.out.println("HI");
+	}
+}
+public class P13 {
+	public static void main(String[] args) {
+		test t=test.A;
+	}
+
+}

@@ -1,0 +1,17 @@
+package com.hcl.inh;
+
+public class CustomString {
+	static String name;
+	public void length(){
+		String s1="sai";
+		int i=0;
+		for(char c:s1.toCharArray()){
+			i++;
+		}
+		System.out.println("length of string is " +i);
+	}
+	public static void main(String[] args) {
+		new CustomString().length();
+	}
+	
+}

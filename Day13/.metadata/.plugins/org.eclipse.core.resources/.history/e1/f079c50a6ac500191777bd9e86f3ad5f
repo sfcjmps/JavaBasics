@@ -1,0 +1,58 @@
+package com.hcl.library;
+
+import java.sql.Connection;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+public class LibraryDaO {
+	
+	public String loginDao(String username,String password) {
+		Connection con = DaoConnection.getConnection();
+		String cmd = "select * from libusers where username = ? and password = ?";
+		String result = "";
+		try {
+			PreparedStatement pst = con.prepareStatement(cmd);
+			pst.setString(1, username);
+			pst.setString(2, password);
+			ResultSet rs = pst.executeQuery();
+			if (rs.next()) {
+				result = "Login Successfull";
+			} else {
+				result = "Invalid Login Details";
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return result;
+	}
+	
+	
+	public Users searchId(String input) {
+		Connection con = DaoConnection.getConnection();
+		String cmd = "select * from books where id = ?";
+		int id = Integer.parseInt(input);
+		PreparedStatement pst;
+		Users obj = null;
+		try {
+			pst = con.prepareStatement(cmd);
+			pst.setInt(1, id);
+			ResultSet rs = pst.executeQuery();
+			while (rs.next()) {
+				obj.setName("name");
+				obj.setAuthor("author");
+				obj.setEdition("edition");
+				obj.setDepartment("department");
+				obj.setTotalBooks(Integer.parseInt("totalBooks"));
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}
+	
+}

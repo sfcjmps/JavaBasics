@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;HtmlDemo/src/J9.html&apos; to &apos;Js9.html&apos;" description="Rename resource &apos;J9.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/J9.html" name="Js9.html" stamp="1565689777188" updateReferences="true"/>
+</session>

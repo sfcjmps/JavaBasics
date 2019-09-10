@@ -1,0 +1,13 @@
+package com.hcl.intf;
+
+class Test implements Ione,Itwo {
+  @Override
+  public void email() {
+    System.out.println("hcl@gmail.com");
+  }
+
+  @Override
+  public void name() {
+    System.out.println("company hcl...");
+  }	
+}

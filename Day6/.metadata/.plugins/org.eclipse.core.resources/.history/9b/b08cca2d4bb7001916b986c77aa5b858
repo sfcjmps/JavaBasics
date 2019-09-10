@@ -1,0 +1,16 @@
+package com.hcl.collections;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class LambdaProduct {
+	public static void main(String[] args) {
+		List<Product> list = new ArrayList<Product>();
+		list.add(new Product(1, "HP Laptop", 25000));
+		list.add(new Product(2, "Keyboard", 300));
+		list.add(new Product(3, "Dell Mouse", 150));
+		
+		collections.sort(list);
+	}
+
+}

@@ -1,0 +1,23 @@
+package com.hcl.java;
+class First{
+	public void show(){
+		System.out.println("show method from base class");
+	}
+}
+class Second extends First{
+	public void show(){
+		super.show();
+		System.out.println("show method from derived class");
+	}
+}
+public class InhDemo {
+	public static void main(String[] args) {
+		Second obj=new Second();
+		obj.show();
+		
+		First obj1=new Second();
+		obj1.show();
+	}
+	
+
+}

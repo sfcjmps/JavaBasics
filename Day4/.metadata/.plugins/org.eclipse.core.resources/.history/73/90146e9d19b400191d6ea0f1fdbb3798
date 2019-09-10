@@ -1,0 +1,32 @@
+package com.hcl.Ex;
+class NumberZeoException extends Exception{
+	public NumberZeoException(String Error){
+		super(Error);
+	}
+}
+class NegativeException extends Exception{
+	public NegativeException(String Error){
+		super(Error);
+	}
+}
+public class Custom {
+	public void sum(int a,int b) throws NegativeException, NumberZeoException{
+		int c;
+		boolean flag=true;
+		if(a<0||b<0){
+			flag=false;
+			throw new NegativeException("Negative Numbers not Allowed");
+		}
+		if(a==0||b==0){
+			throw new NumberZeoException("Zero is Invalid");
+		}
+		if(flag==true){
+			c=a+b;
+			System.out.println("Sum is " +c);
+		}
+	}
+	public static void main(String[] args) {
+		int a=5,b=-12;
+	}
+
+}

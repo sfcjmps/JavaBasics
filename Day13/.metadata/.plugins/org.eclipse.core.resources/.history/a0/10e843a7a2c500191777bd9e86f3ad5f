@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type = "text/css" media = "all">
+        
+         h3 {
+         
+         	text-size : 40px;
+            font-color: "white";
+            
+         }
+      </style>
+</head>
+<body >
+<p>
+	<h3><a href = 'AccountDetails' color = 'white'></h3>Account Details</a></h3>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href = 'searchBooks'>Search Issue</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href = 'Return'>Return</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href = 'History'>History</a>
+</p>
+</body>
+</html>

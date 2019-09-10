@@ -1,0 +1,46 @@
+package com.hcl.Ex;
+class InvalidMailException extends Exception{
+	public InvalidMailException(String error){
+		super(error);
+	}
+}
+class InvalidUserNameException extends Exception{
+	public InvalidUserNameException(String error){
+		super(error);
+	}
+}
+public class EmailEx {
+	public void email(String s) throws InvalidMailException, InvalidUserNameException{
+		boolean flag=true;
+		int a,b;
+		String p;
+		a=s.indexOf('@');
+		if(a==-1){
+			flag=false;
+			throw new InvalidMailException("@ is mandatory");
+		}
+		p=s.substring(0,a);
+		b=p.length();
+		if(b>12){
+			flag=false;
+			throw new InvalidUserNameException("UserName is big");
+		}
+		if(flag==true){
+			System.out.println(s);
+		}
+	}
+	public static void main(String[] args) {
+		try {
+			new EmailEx().email("epurisaikumar5@gmail.com");
+		}catch(InvalidUserNameException e){
+			System.out.println("Invalid Usename");
+		}catch(InvalidMailException e){
+			System.out.println("Invalid mail id");
+		}finally{
+			System.out.println("email is printed");
+		}
+//		catch (InvalidMailException | InvalidUserNameException e) {
+//			e.printStackTrace();
+//		}
+	}
+}

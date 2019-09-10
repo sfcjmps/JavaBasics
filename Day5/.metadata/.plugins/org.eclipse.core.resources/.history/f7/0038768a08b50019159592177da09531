@@ -1,0 +1,11 @@
+package com.hcl.collections;
+
+import java.io.FileInputStream;
+
+public class ScanFile {
+	public static void main(String[] args) {
+		FileInputStream fin = new FileInputStream("D:/hcljava/Day5/Java3/src/com/hcl/collections/SortEmploy.java");
+		
+	}
+
+}

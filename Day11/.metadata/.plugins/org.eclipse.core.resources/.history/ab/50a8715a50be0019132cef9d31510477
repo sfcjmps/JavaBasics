@@ -1,0 +1,11 @@
+var i = 0;
+questions = [
+             "1.What is Object Oriented Programming ?",
+             "2.Who Introduced Java ?",
+             "3,How to Declare Generics ?",
+             "4.String.format() is used for ?",
+             ];
+
+function show() {
+	
+}

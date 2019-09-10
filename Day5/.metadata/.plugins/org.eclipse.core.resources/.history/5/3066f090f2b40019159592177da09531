@@ -1,0 +1,17 @@
+package com.hcl.collections;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArrayListDemo {
+	public static void main(String[] args) {
+		List lstnames = new ArrayList();
+	    lstnames.add("Anubhav");
+	    lstnames.add("Vinod");
+	    lstnames.add("Prem");
+	    lstnames.add("Raghu");
+	    lstnames.add("Sai");
+	    lstnames.add("Vishalakshi");
+	}
+
+}

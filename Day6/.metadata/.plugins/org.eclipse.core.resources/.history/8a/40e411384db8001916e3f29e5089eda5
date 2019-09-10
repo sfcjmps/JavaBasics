@@ -1,0 +1,67 @@
+package com.hcl.project1;
+
+import java.util.List;
+
+public class CustomerBAL {
+	static StringBuilder sb = new StringBuilder();
+	public boolean addCustomerBal(Customer objcustomer) throws CustomerException {
+		boolean isadded = true;
+		
+		if (objcustomer.getCustId() < 0){
+			sb.append("customer id should not be negative \r\n");
+			isadded = false;
+		}
+		
+		if (objcustomer.getCustName().length() < 5) {
+			sb.append("customer name requires minium 5 characters");
+			isadded = false;
+		}
+		
+		if (objcustomer.getAnnualPremium() < 20000 && objcustomer.getAnnualPremium() > 1000000) {
+			sb.append("annual premium must lie between 20000 and 1000000");
+			isadded = false;
+		}
+		
+		if (objcustomer.getModalPremium() < 1000 && objcustomer.getModalPremium() > 50000) {
+			sb.append("modal premium must lie between 1000 and 5000");
+			isadded = false;
+		}
+		
+		if (objcustomer.getPaymentMode() < 0 && objcustomer.getPaymentMode() > 3) {
+			sb.append("payment mode has only 3 choices");
+			isadded = false;
+		}
+		
+		if (isadded == false) {
+			throw new CustomerException(sb.toString());
+		}
+		else {
+			new CustomerDAO().addCustomerDao(objcustomer);
+		}
+		return isadded;
+	}
+	
+	public List<Customer> showCustomerBal() {
+		return new CustomerDAO().showCustomerDao();
+	}
+	
+	public Customer searchCustomerBal(int custId) {
+		return new CustomerDAO().searchCustomerDao(custId);
+	}
+	
+	public String deleteCustomerBal(int custId) {
+		return new CustomerDAO().deleteCustomerDao(custId);
+	}
+	
+	public String updateCustomerBal(Customer objcustomer) {
+		return new CustomerDAO().updateCustomerDao(objcustomer);
+	}
+	
+	public void writeCustomerFileBal() {
+		new CustomerDAO().writeCustomerFileDao();
+	}
+	
+	public void readCustomerBal() {
+		new CustomerDAO().readCustomerFileDao();
+	}
+}

@@ -1,0 +1,17 @@
+package com.hcl.inh;
+class Variables{
+	public int a;
+	public Variables(int a) {
+		super();
+		this.a = a;
+	}
+}
+public class Test {
+	public static void main(String[] args) {
+		Variables obj=new Variables(2);
+		System.out.println(obj);
+		
+		
+	}
+
+}

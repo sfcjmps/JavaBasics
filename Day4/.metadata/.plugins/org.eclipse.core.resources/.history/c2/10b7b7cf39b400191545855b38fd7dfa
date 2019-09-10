@@ -1,0 +1,47 @@
+package com.hcl.ex;
+/**
+ * Email Exceptions.
+ * @author sai kumar.
+ */
+
+public class EmailEx {
+  /**
+   * Method email for validting email.
+   * @param s for passing String.
+   * @throws InvalidMailException for invalid character.
+   * @throws InvalidUserNameException for invalid username.
+   */
+  public void email(String s) throws InvalidMailException, InvalidUserNameException { 
+    boolean flag = true;
+    int a;
+    String p;
+    a = s.indexOf('@');
+    if (a == -1) {
+			flag=false;
+			throw new InvalidMailException("@ is mandatory");
+		}
+		p=s.substring(0,a);
+		int b=p.length();
+		if(b>12){
+			flag=false;
+			throw new InvalidUserNameException("UserName is big");
+		}
+		if(flag==true){
+			System.out.println(s);
+		}
+	}
+	public static void main(String[] args) {
+		try {
+			new EmailEx().email("epuri.kumar5@gmail.com");
+		}catch(InvalidUserNameException e){
+			System.out.println("Invalid Usename");
+		}catch(InvalidMailException e){
+			System.out.println("Invalid mail id");
+		}finally{
+			System.out.println("email is printed");
+		}
+//		catch (InvalidMailException | InvalidUserNameException e) {
+//			e.printStackTrace();
+//		}
+	}
+}

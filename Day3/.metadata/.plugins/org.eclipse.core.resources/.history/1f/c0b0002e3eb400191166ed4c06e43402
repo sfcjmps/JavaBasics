@@ -1,0 +1,8 @@
+package com.hcl.abs;
+
+class Janani extends Employ { 
+  public janani(int empno, String name, double basic) {
+    super(empno, name, basic);
+  }
+}
+

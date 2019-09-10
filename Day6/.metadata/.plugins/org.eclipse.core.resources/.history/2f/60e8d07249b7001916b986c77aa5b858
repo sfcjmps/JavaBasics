@@ -1,0 +1,8 @@
+package com.hcl.collections;
+@FunctionalInterface
+interface ICToF {
+	Double calc(double c);
+}
+public class Lambda3 {
+
+}

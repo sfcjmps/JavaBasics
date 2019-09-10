@@ -1,0 +1,37 @@
+package com.hcl.boxing;
+
+public class TimeZone {
+	int hrs,min;
+	
+//	public TimeZone(int hrs,int min) {
+//		this.hrs=hrs;
+//		this.min=min;
+//	}
+
+	public TimeZone() {
+		hrs=3;
+		min=40;
+	}
+
+	public TimeZone(int hrs, int min) {
+		this.hrs = hrs;
+		this.min = min;
+	}
+//	public void add()
+
+	@Override
+	public String toString() {
+		return "TimeZone [hrs=" + hrs + ", min=" + min + "]";
+	}
+	public static void main(String[] args) {
+		TimeZone obj=new TimeZone();
+		System.out.println(obj);
+		TimeZone obj1=new TimeZone(2,35);
+		System.out.println(obj1);
+		
+	}
+	
+	
+	
+
+}

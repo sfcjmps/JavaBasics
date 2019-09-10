@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/-config" deployDir="wtpwebapps" hostname="localhost" id="" name="" runtime-id="Apache Tomcat v8.0" server-type="org.eclipse.jst.server.tomcat.80" server-type-id="org.eclipse.jst.server.tomcat.80" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="9">
+    <list key="modules" value0="HelloWorlds::org.eclipse.jst.j2ee.server:HelloWorlds::jst.web::2.3" value1="Calculation::org.eclipse.jst.j2ee.server:Calculation::jst.web::2.3" value2="SpringFullName::org.eclipse.jst.j2ee.server:SpringFullName::jst.web::2.3" value3="SpringNameList::org.eclipse.jst.j2ee.server:SpringNameList::jst.web::2.3" value4="SpringMvcLogin::org.eclipse.jst.j2ee.server:SpringMvcLogin::jst.web::2.3" value5="EmployDetails::org.eclipse.jst.j2ee.server:EmployDetails::jst.web::2.3" value6="DepartmentDetails::org.eclipse.jst.j2ee.server:DepartmentDetails::jst.web::2.3"/>
+  </server>
+</servers>

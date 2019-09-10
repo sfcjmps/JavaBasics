@@ -1,0 +1,16 @@
+package com.hcl.ems;
+
+import java.util.Date;
+
+public class LeaveHistory {
+	private int lea_id;
+	private Date lea_start_date;
+	private Date lea_end_date;
+	private int lea_no_of_days;
+	private String lea_reason;
+	private String lea_type;
+	private Date lea_applied_on;
+	private String lea_mgr_comments;
+	private int emp_id;
+	private String status
+}

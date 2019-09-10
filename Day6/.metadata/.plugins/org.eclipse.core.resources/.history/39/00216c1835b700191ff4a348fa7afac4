@@ -1,0 +1,11 @@
+package com.hcl.collections;
+
+class Data {
+  public void swap(int x,int y) {
+    int t;
+    t = x;
+    x = y;
+    y = t;
+    System.out.println("X value is " + x + "\r\n" + "Y value is " + y);
+  }
+}

@@ -1,0 +1,29 @@
+package com.hcl.project;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class StudentDAO {
+	static List<Student> lstStudent = null;
+	static {
+		lstStudent = new ArrayList<Student>();
+	}
+	
+	public String addStudentDao(Student student) {
+		lstStudent.add(student);
+		return "Student Created Successfully....";
+	}
+	
+	public Student searchStudentDao(int sno) {
+		Student objStudent = null;
+		for (Student student : lstStudent) {
+			if (student.getSno() == sno) {
+				objStudent = student;
+			}
+		}
+		return objStudent;
+	}
+	public List<Student> showStudent() {
+		return lstStudent;
+	}
+}

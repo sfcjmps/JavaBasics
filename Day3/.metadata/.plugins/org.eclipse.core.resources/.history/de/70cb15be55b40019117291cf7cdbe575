@@ -1,0 +1,20 @@
+package com.hcl.ex;
+/**
+ * Inheritance.
+ * @author saikumar.
+ * @param args for passing arguments.
+ */
+class C11 {
+  int a;
+  int b;
+  
+  public C11() {
+    a = 5;
+    b = 8;
+  }
+  
+  @Override
+  public String toString() {
+    return "C11 [a=" + a + ", b=" + b + "]";
+  }
+}

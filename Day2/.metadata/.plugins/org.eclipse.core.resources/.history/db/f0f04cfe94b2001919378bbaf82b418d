@@ -1,0 +1,11 @@
+package com.hcl.boxing;
+
+public class ConDemo {
+	static {
+		System.out.println("static constructor..");
+	}
+	public static void main(String[] args) {
+		
+	}
+
+}

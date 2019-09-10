@@ -1,0 +1,15 @@
+package com.hcl.quiz;
+
+public class MathLib {
+	public void power(int a,int b){
+		for (int i=1;i<=b;i++) {
+			a=a*i;
+		}
+		System.out.println(a);
+	}
+	public static void main(String[] args) {
+		new MathLib().power(2, 2);
+		
+	}
+
+}

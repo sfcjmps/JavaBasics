@@ -1,0 +1,14 @@
+
+package com.hcl.inh;
+
+class C1 {
+	public void show(){
+		System.out.println("From Show Method");
+	}
+}
+class C2{
+	public void display(){
+		System.out.println("From Display Method");
+	}
+}
+

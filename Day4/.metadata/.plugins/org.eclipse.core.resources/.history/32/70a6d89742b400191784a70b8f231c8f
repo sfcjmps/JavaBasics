@@ -1,0 +1,10 @@
+package com.hcl.files;
+
+import java.io.File;
+
+public class FileInfo {
+  public static void main(String[] args) {
+	 File f1=new File("D:\\hcljava\\Day4\\Java2\\src\\com\\hcl\\ex\\ChkDemo.java");
+	 
+}
+}

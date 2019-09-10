@@ -1,0 +1,16 @@
+package com.hcl.ex;
+
+class C11 {
+  int a;
+  int b;
+  
+  public C11() {
+    a = 5;
+    b = 8;
+  }
+  
+  @Override
+  public String toString() {
+    return "C11 [a=" + a + ", b=" + b + "]";
+  }
+}

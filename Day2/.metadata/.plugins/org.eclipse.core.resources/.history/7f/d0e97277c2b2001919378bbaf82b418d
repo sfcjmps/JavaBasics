@@ -1,0 +1,21 @@
+package com.hcl.inh;
+
+public class CustomString {
+	static String name;
+	public void length(){
+		String s1="sai";
+		String s2="kumar";
+		int i=0,j=0;
+		char[] arr1=s1.toCharArray();
+		char[] arr2=s2.toCharArray();
+		for(char c:arr1){
+			i++;
+		}
+		System.out.println("length of string s1 is : " +i);
+	
+	}
+	public static void main(String[] args) {
+		new CustomString().length();
+	}
+	
+}

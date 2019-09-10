@@ -1,0 +1,42 @@
+package com.hcl.collections;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class LambdaEmploy {
+	public static void main(String[] args) {
+		List<Employ> lstEmploy = new ArrayList<Employ>();
+	    lstEmploy.add(new Employ(1,"Divya",56986));
+	    lstEmploy.add(new Employ(2,"Laksh",54639));
+	    lstEmploy.add(new Employ(3,"Vinod",85693));
+	    lstEmploy.add(new Employ(4,"Prem",45369));
+	    lstEmploy.add(new Employ(5,"Raghu",65398));
+	    lstEmploy.add(new Employ(6,"Hema",36589));
+	    
+	    Collections.sort(lstEmploy,(p1,p2) -> {
+	    	return p1.name.compareTo(p2.name);
+	    });
+	    System.out.println("sorting by name.......");
+	    for (Employ employ : lstEmploy) {
+			System.out.println(employ);
+		}
+	    System.out.println("-------------");
+	    System.out.println("sorting by basic......");
+	    Collections.sort(lstEmploy,(p1,p2) -> {
+	    	return (int)(p1.basic-p2.basic);
+	    });
+	    for (Employ employ : lstEmploy) {
+			System.out.println(employ);
+		}
+	    System.out.println("-------------");
+	    System.out.println("sorting by employ id........");
+	    Collections.sort(lstEmploy,(p1,p2) -> {
+	    	return (int)(p1.empno-p2.empno);
+	    });
+	    for (Employ employ : lstEmploy) {
+			System.out.println(employ);
+		}
+	}
+
+}

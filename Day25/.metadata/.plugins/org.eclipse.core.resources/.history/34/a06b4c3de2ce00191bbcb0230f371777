@@ -1,0 +1,9 @@
+package com.hcl.hib;
+
+public class FeedBack {
+	private String fid;
+	private String studentName;
+	private String instructor;
+	private String subject;
+	private String fbvalue;
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.hcl.java.Second"/>
+<fullyQualifiedTypeName name="com.hcl.java.First"/>
+<fullyQualifiedTypeName name="com.hcl.java.Employ"/>
+<fullyQualifiedTypeName name="com.hcl.abs.Training"/>
+<fullyQualifiedTypeName name="com.hcl.abs.janani"/>
+<fullyQualifiedTypeName name="com.hcl.abs.Employ"/>
+<fullyQualifiedTypeName name="com.hcl.intf.Test"/>
+<fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+<fullyQualifiedTypeName name="com.hcl.ex.ArrEx"/>
+<fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+<fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+<fullyQualifiedTypeName name="java.lang.ClassCastException"/>
+<fullyQualifiedTypeName name="com.hcl.ex.C2"/>
+<fullyQualifiedTypeName name="javax.management.relation.RelationTypeNotFoundException"/>
+</qualifiedTypeNameHistroy>

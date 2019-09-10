@@ -1,0 +1,13 @@
+127.0.0.1 - - [21/Aug/2019:08:49:21 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [21/Aug/2019:08:49:22 +0530] "GET /LibraryProject/login.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [21/Aug/2019:08:49:24 +0530] "GET /LibraryProject/login.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [21/Aug/2019:08:49:24 +0530] "GET /LibraryProject/login.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [21/Aug/2019:08:49:25 +0530] "GET /LibraryProject/login.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [21/Aug/2019:08:49:36 +0530] "GET /LibraryProject/LoginServlet?userName=Bhargav&passWord=ravula HTTP/1.1" 200 440
+0:0:0:0:0:0:0:1 - - [21/Aug/2019:08:49:38 +0530] "GET /LibraryProject/searchBooks HTTP/1.1" 404 1046
+127.0.0.1 - - [21/Aug/2019:08:52:33 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [21/Aug/2019:08:52:36 +0530] "GET /LibraryProject/login.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [21/Aug/2019:08:52:36 +0530] "GET /LibraryProject/login.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [21/Aug/2019:08:52:36 +0530] "GET /LibraryProject/login.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [21/Aug/2019:08:52:43 +0530] "GET /LibraryProject/LoginServlet?userName=bhargav&passWord=ravula HTTP/1.1" 200 440
+0:0:0:0:0:0:0:1 - - [21/Aug/2019:08:52:45 +0530] "GET /LibraryProject/searchBooks HTTP/1.1" 200 1157

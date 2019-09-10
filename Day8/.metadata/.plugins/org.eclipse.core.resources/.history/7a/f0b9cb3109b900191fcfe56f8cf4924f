@@ -1,0 +1,32 @@
+package com.hcl.jdbc;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+public class DepartmentUpdate {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int deptno;
+		String loc;
+		System.out.println("Enter Department No : ");
+		deptno = Integer.parseInt(sc.nextLine());
+		System.out.println("Enter Department Location : ");
+		loc = sc.nextLine();
+		String cmd = "update Department set loc = ? where deptno = ?";
+		Connection con = DaoConnection.getConnection();
+		try {
+			PreparedStatement pst = con.prepareStatement(cmd);
+			pst.setString(1, loc);
+			pst.setInt(2, deptno);
+			pst.executeUpdate();
+			System.out.println("Record updated successfully....");
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}

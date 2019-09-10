@@ -1,0 +1,10 @@
+package com.hcl.intf;
+
+class Test implements IOne,ITwo {
+  public void email() {
+    System.out.println("hcl@gmail.com");
+  }
+  public void name() {
+    System.out.println("company hcl...");
+  }
+}

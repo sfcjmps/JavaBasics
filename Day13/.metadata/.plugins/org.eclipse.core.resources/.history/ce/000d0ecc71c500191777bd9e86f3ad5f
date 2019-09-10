@@ -1,0 +1,12 @@
+package com.hcl.library;
+
+public class LibraryBaL {
+	public static String loginBal(String username,String password) {
+		return new LibraryDaO().loginDao(username, password);
+	}
+	
+	public static Books searchIdBal(String searchtype,String input) {
+		return new LibraryBaL().searchIdBal(searchtype,input);
+	}
+
+}

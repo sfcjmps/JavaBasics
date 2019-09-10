@@ -1,0 +1,28 @@
+package com.hcl.hib;
+
+import java.util.List;
+
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+public class FeedBackOperations {
+	public static String feedBackId() {
+		SessionFactory sf = HibernateUtil.getConnection();
+		Session s = sf.openSession();
+		Query q = s.createQuery("select max(fid) from FeedBack");
+		List<FeedBack> lst = q.list();
+		String fid="";
+		FeedBack f = lst.get(0);
+		if(f==null) {
+			fid="C001";
+		} else {
+		int id = Integer.parseInt(fid.substring(1));
+		id++;
+		String format = String.format("%03d", id);
+		String fid1 = "C" + format;
+		return fid1;
+		}
+		return fid;
+	}
+}

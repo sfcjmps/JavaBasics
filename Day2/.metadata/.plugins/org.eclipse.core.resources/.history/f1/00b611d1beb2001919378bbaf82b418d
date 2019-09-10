@@ -1,0 +1,36 @@
+package com.hcl.inh;
+class Variables{
+	public int a;
+	private int b;
+	protected int c;
+	int d;
+	public void show(){
+		Variables obj=new Variables();
+		System.out.println(obj.a);
+		System.out.println(obj.b);
+		System.out.println(obj.c);
+		System.out.println(obj.d);
+	}
+}
+class Red{
+	public void add(){
+		Variables ab=new Variables();
+		System.out.println(ab.a);
+		System.out.println(ab.b);
+		System.out.println(ab.c);
+		System.out.println(ab.d);
+	}
+}
+class Two extends Variables{
+	public void Demo(){
+		Two obj1=new Two();
+		System.out.println(obj1.a);
+		System.out.println(obj1.b);
+		System.out.println(obj1.c);
+		System.out.println(obj1.d);
+	}
+}
+public class Test {
+	public static void main(String[] args) {
+	}
+}

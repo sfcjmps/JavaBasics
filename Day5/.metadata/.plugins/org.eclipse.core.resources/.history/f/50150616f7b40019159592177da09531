@@ -1,0 +1,9 @@
+package com.hcl.collections;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArrEmploy {
+	List lstemploy = new ArrayList();
+	lstemploy.add(new Employ)
+}

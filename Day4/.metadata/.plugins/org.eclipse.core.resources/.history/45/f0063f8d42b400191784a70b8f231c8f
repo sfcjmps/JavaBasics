@@ -1,0 +1,10 @@
+package com.hcl.files;
+
+import java.io.File;
+
+public class FileInfo {
+  public static void main(String[] args) {
+	
+	 
+}
+}

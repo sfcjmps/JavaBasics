@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form method = "get" action = "AddAccount.jsp">
+		<center>
+			First Name :
+			<input type = "text" name = "firstName" /><br/><br/>
+			Last Name :
+			<input type = "text" name = "lastName" /><br/><br/>
+			City :
+			<input type = "text" name = "city" /><br/><br/>
+			State :
+			<input type = "text" name = "state" /><br/><br/>
+			Amount :
+			<input type = "text" name = "amount" /><br/><br/>
+			Cheque Facility :
+			<input type = "checkbox" name = "cheqFacil" value = "yes"/>YES<br/><br/>
+			<input type = "checkbox" name = "cheqFacil" value = "no" />NO<br/><br/>
+			Account Type :
+			<input type = "checkbox" name = "acountType" value = "Savings" />Savings<br/><br/>
+			<input type = "checkbox" name = "accountType" value = "Current" />Current<br/><br/>
+			<input type = "submit" value = "ADD" />;
+		</center>
+	</form>
+</body>
+</html>

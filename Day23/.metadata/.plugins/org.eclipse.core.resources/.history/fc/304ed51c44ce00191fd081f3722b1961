@@ -1,0 +1,34 @@
+<%@page import="com.hcl.hib.Department"%>
+<%@page import="com.hcl.hib.DepartmentCrud"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form method="get" action="DepartmentSearch.jsp" />
+Department No: <input type="text" name="departmenttno" /> <br/><br/>
+               <input submit="submit" value="submit" />
+<%
+  if(request.getParameter("deptno")!=null) {
+	  DepartmentCrud obj=new DepartmentCrud();
+		  Department obj1=obj.searchDepartment(Integer.parseInt(request.getParameter("empno")));
+		  if(obj1 != null) {
+%>    
+
+ 	Department No : <%=obj1.getDeptno() %><br/>
+	Department Name : <%=obj1.getDname() %><br/>
+	Location  : <%=obj1.getLoc() %><br/>
+	Head : <%=obj1.getHead() %>        
+	
+<%
+		  }else{
+			  %>
+			  <%="Record Not Found...." %>
+		  }
+%>	   
+</body>
+</html>

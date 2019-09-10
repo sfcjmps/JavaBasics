@@ -1,0 +1,5 @@
+package com.hcl.StudentSpringHibernate.model;
+
+public class Model {
+
+}

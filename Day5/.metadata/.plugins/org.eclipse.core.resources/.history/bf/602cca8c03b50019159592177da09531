@@ -1,0 +1,19 @@
+package com.hcl.collections;
+
+import java.util.SortedSet;
+import java.util.TreeSet;
+
+public class SortedSetDemo {
+	public static void main(String[] args) {
+		SortedSet s= new TreeSet();
+		s.add("sai");
+		s.add("yash");
+		s.add("kumar");
+		s.add("laksh");
+		s.add("uttam");
+		System.out.println("sorted order is : ");
+		s.forEach(System.out::println);
+		
+	}
+
+}

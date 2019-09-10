@@ -1,0 +1,14 @@
+package com.hcl.intf;
+
+public class IntfDemo {
+  public static void main(String[] args) {
+    ITraining[] arr = new ITraining[] {
+      new Hema(),
+      new Keerthana()
+    };
+    for (ITraining t : arr) {
+      t.name();
+      t.email();
+    }
+  }
+}

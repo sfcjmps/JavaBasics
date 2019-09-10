@@ -1,0 +1,18 @@
+package com.hcl.project1;
+
+public class CustomerBAL {
+	static StringBuilder sb = new StringBuilder();
+	public boolean addCustomerBal(Customer objcustomer) {
+		isadded = true;
+		
+		if (objcustomer.getCustId() < 0){
+			sb.append("customer id should not be negative \r\n");
+			isadded = false;
+		}
+		
+		if (objcustomer.getCustName().length() < 5) {
+			sb.append("customer name require")
+		}
+	}
+
+}

@@ -1,0 +1,5 @@
+package hcl.DepartmentInsert;
+
+public class DeptInsertDao {
+
+}

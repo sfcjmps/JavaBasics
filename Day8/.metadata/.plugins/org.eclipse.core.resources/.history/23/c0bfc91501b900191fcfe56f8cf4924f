@@ -1,0 +1,23 @@
+package com.hcl.jdbc;
+
+import java.util.Scanner;
+
+public class EmployInsert {
+	public static void main(String[] args) {
+		int empno;
+		String name;
+		String dept;
+		int basic;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Employ No : ");
+		empno = Integer.parseInt(sc.nextLine());
+		System.out.println("Enter Employ Name : ");
+		name = sc.nextLine();
+		System.out.println("Enter Employ department : ");
+		dept = sc.nextLine();
+		System.out.println("Enter Employ Salary : ");
+		basic = Integer.parseInt(sc.nextLine());
+		
+	}
+
+}

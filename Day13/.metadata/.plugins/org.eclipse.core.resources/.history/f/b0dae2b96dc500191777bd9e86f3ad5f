@@ -1,0 +1,48 @@
+package com.hcl.library;
+
+import java.sql.Connection;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import com.sun.xml.internal.bind.v2.schemagen.xmlschema.List;
+
+public class LibraryDaO {
+	
+	public String loginDao(String username,String password) {
+		Connection con = DaoConnection.getConnection();
+		String cmd = "select * from libusers where username = ? and password = ?";
+		String result = "";
+		try {
+			PreparedStatement pst = con.prepareStatement(cmd);
+			pst.setString(1, username);
+			pst.setString(2, password);
+			ResultSet rs = pst.executeQuery();
+			if (rs.next()) {
+				result = "Login Successfull";
+			} else {
+				result = "Invalid Login Details";
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return result;
+	}
+	
+	
+	public List<Users> searchId(String searchtype,String input) {
+		Connection con = DaoConnection.getConnection();
+		PreparedStatement pst;
+		String cmd = "";
+		if (searchtype.equals("id")) {
+			cmd = "select * from books where id = ?"
+		}
+		if (searchtype.equls("name")) {
+			cmd = "select * from"
+		}
+		
+	}
+	
+}

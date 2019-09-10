@@ -1,0 +1,22 @@
+package com.hcl.hib;
+
+import java.util.Scanner;
+
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.AnnotationConfiguration;
+import org.hibernate.cfg.Configuration;
+
+public class MainProg {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Employ Number : ");
+		int empno = sc.nextInt();
+		Configuration cfg = new AnnotationConfiguration();
+		cfg.configure("hibernate.cgh.xml");
+		SessionFactory sf = cfg.buildSessionFactory();
+		Session s = sf.openSession();
+		Query q = "from Employ Where empno = " + empno;
+	}
+}

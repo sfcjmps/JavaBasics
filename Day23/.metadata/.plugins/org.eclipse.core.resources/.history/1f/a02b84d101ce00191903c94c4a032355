@@ -1,0 +1,16 @@
+package com.hcl.hib;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+public class Employ {
+	
+	@Entity
+	@Table
+	private int empno;
+	private String name;
+	private String dept;
+	private String desig;
+	private int basic;
+
+}

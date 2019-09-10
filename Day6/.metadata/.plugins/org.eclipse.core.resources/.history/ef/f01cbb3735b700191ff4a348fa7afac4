@@ -1,0 +1,16 @@
+package com.hcl.collections;
+
+public class SwapDemo {
+  /**
+   * Swapping of two integers.
+   * @param args for passing arguments.
+   */
+  public static void main(String[] args) {
+    Data obj = new  Data();
+    int x;
+    int y;
+    x = 12;
+    y = 13;
+    obj.swap(x,y);
+  }
+}

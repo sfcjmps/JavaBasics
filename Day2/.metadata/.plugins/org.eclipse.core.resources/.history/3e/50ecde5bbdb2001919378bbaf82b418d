@@ -1,0 +1,14 @@
+package T;
+import com.hcl.inh.Test;
+public class Data {
+	public void show(){
+		com.hcl.inh.Test gh  =new Test();
+		
+		
+		System.out.println(gh.a);
+		System.out.println(gh.b);
+		
+		
+	}
+
+}

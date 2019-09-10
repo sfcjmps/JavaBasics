@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type = "text/css" media = "all">
+        
+         p {
+         	text-size : 40px;
+            color: white;
+            
+         }
+      </style>
+</head>
+<body background = "C:/Users/Coalesce 5/Desktop/library.jpg">
+<p>
+	<a href = 'AccountDetails' color = white>Account Details</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href = 'searchBooks'>Search Issue</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href = 'Return'>Return</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href = 'History'>History</a>
+</p>
+</body>
+</html>

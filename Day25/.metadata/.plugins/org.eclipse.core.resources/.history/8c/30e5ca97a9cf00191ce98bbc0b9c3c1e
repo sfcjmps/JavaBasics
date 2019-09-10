@@ -1,0 +1,21 @@
+package com.hcl.hib;
+
+public class Count {
+	private int count;
+	private String fbval;
+	private String instructor;
+	private String subject;
+	public int getCount() {
+		return count;
+	}
+	public void setCount(int count) {
+		this.count = count;
+	}
+	public String getFbval() {
+		return fbval;
+	}
+	public void setFbval(String fbval) {
+		this.fbval = fbval;
+	}
+	
+}

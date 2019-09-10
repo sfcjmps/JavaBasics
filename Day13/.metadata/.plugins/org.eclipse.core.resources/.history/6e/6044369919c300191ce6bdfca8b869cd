@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form method = "get" action = "OrderServlet">
+	<table>
+	<tr>
+		<td>Order Id :</td>
+		<td><input type = "text" name = "id" /><br/><br/></td>
+		</tr>
+		<tr>
+		<td>Name :</td>
+		<td><input type = "text" name = "name" /><br/><br/></td>
+		</tr>
+		<tr>
+		<td>Quantity :</td>
+		<td><input type = "text" name = "quantity" /><br/><br/></td>
+		</tr>
+		<tr>
+		<td>Unit of Measure :</td>
+		<td><input type = "text" name = "amt" /><br/><br/></td>
+		</tr>
+		<tr>
+		<td><input type = "submit" value = "ORDER" /></td>
+		</tr>
+		</table>
+	</form>
+</body>
+</html>

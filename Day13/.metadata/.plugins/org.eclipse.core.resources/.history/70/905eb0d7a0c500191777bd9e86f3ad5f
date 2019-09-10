@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type = "text/css" media = "all">
+        
+         h4 {
+            color: maroon;
+            margin-left: 40px;
+         }
+      </style>
+</head>
+<body background="library.jpg">
+<h4>
+	<a href = 'AccountDetails'>Account Details</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href = 'searchBooks'>Search Issue</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href = 'Return'>Return</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href = 'History'>History</a>
+</h4>
+</body>
+</html>

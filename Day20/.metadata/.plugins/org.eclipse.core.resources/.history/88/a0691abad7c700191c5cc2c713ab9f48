@@ -1,0 +1,32 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/sql" prefix = "sql" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<sql:setDataSource var = "conn"
+	driver = "com.mysql.jdbc.Driver"
+	url = "jdbc:mysql://localhost:3306/bank"
+	user = "root"
+	password = "root"
+	/>
+	<sql:update var = "u" dataSource = "${conn}">
+		update accounts set amount = amount + ? where accountno = ?
+		<sql:param value = "${param.deptamt}"></sql:param>
+		<sql:param value = "${param.accno}"></sql:param>
+	</sql:update>
+	<c:set var = "transtype" value = "0" />
+	<sql:update var = "i" dataSource = "${conn}">
+	insert into trans(accountno,transamount,transtype) values(?,?,?)
+		<sql:param value = "${param.accno}"></sql:param>
+		<sql:param value = "${param.deptamt}"></sql:param>
+		<c:set var = "transtype" value = "D" />
+	</sql:update>
+	<c:out value = "Amount Deposited Successsfully..." />
+</body>
+</html>

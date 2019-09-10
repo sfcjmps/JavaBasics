@@ -1,0 +1,5 @@
+package com.hcl.intf;
+
+interface Itwo {
+  void email();
+}

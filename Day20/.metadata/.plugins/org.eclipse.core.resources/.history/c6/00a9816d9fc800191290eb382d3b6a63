@@ -1,0 +1,8 @@
+package com.hcl.ems;
+
+import java.util.Date;
+
+public class LeaveHistory {
+	private Date lea_id;
+	private Date lea
+}

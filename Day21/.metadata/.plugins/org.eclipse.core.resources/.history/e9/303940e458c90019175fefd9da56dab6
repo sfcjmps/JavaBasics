@@ -1,0 +1,7 @@
+package hcl.DepartmentInsert;
+
+import java.sql.JDBCType;
+
+public class DeptInsertDao {
+	private Jdbc  jdbcTemplate;
+}

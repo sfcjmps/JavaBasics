@@ -1,0 +1,10 @@
+package com.hcl.hib;
+
+public class Employ {
+	private int empno;
+	private String name;
+	private String dept;
+	private String desig;
+	private String basic;
+	
+}

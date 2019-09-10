@@ -1,0 +1,75 @@
+package com.hcl.library;
+
+import java.sql.Connection;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+
+
+public class LibraryDaO {
+	
+	public String loginDao(String username,String password) {
+		Connection con = DaoConnection.getConnection();
+		String cmd = "select * from libusers where username = ? and password = ?";
+		String result = "";
+		try {
+			PreparedStatement pst = con.prepareStatement(cmd);
+			pst.setString(1, username);
+			pst.setString(2, password);
+			ResultSet rs = pst.executeQuery();
+			if (rs.next()) {
+				result = "Login Successfull";
+			} else {
+				result = "Invalid Login Details";
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return result;
+	}
+	
+	
+	public List<Books> searchDao(String searchtype,String input) {
+		List<Books> obj = new ArrayList<Books>();
+		Connection con = DaoConnection.getConnection();
+		PreparedStatement pst;
+		String cmd = "";
+		if (searchtype.equals("id")) {
+			cmd = "select * from books where id = ?";
+		} else if (searchtype.equals("name")) {
+			cmd = "select * from books where name = ?";
+		} else if (searchtype.equals("author")) {
+			cmd = "select * from books where author = ?";
+		} else if (searchtype.equals("departmnet")) {
+			cmd = "select * from books where dept = ?";
+		} else {
+			cmd =" SELECT * FROM Books WHERE Name != ? OR 1 = 1 " ;
+		}
+	    try {
+			pst = con.prepareStatement(cmd);
+			pst.setString(1, input);
+			ResultSet rs = pst.executeQuery();
+			while (rs.next()) {
+				Books b1 = new Books();
+				b1.setId(rs.getInt("id"));
+				b1.setName(rs.getString("name"));
+				b1.setAuthor(rs.getString("author"));
+				b1.setEdition(rs.getString("edition"));
+				b1.setDepartment(rs.getString("dept"));
+				b1.setTotalBooks(rs.getInt("totalbooks"));
+				obj.add(b1);
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	    return obj;
+		
+	}
+	
+}
