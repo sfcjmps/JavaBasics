@@ -1,0 +1,46 @@
+package com.hcl.student.dao;
+
+import java.util.List;
+
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import com.hcl.student.controller.HibernateUtil;
+import com.hcl.student.model.Student;
+
+public class StudentDaoImpl implements StudentDao{
+
+	public boolean addStudent(Student st) {
+		SessionFactory sf = HibernateUtil.getConnection();
+		Session s = sf.openSession();
+		if (st != null) {
+			Transaction t = s.beginTransaction();
+			s.save(st);
+			t.commit();
+			return true;
+		} else {
+		return false;
+		}
+	}
+
+	public boolean updateStudent(Student st) {
+		SessionFactory sf = HibernateUtil.getConnection();
+		Session s = sf.openSession();
+		Query q = s.createQuery("from Student where Rollnum = " + st.getRollnum());
+		List< Student> lst = q.list();
+		
+		if (st != null) {
+			if (st.getRollnum()!=null) {
+				
+			}
+		}
+	}
+
+	public Student getStudent(int Rollnum) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

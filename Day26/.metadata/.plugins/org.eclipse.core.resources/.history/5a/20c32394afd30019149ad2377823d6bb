@@ -1,0 +1,9 @@
+package com.hcl.student.dao;
+
+import com.hcl.student.model.Student;
+
+public class StudentDaoImpl implements Studentdao{
+	public boolean addStudent(Student st) {
+		return true;
+	}
+}

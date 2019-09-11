@@ -1,0 +1,50 @@
+package com.jwt.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.jwt.dao.EmployeeDAO;
+import com.jwt.model.Employee;
+
+@Service
+@Transactional
+public class StudentServiceImpl implements StudentService {
+
+	@Autowired
+	private EmployeeDAO StudentDAO;
+
+	@Override
+	@Transactional
+	public void addEmployee(Employee employee) {
+		StudentDAO.addEmployee(employee);
+	}
+
+	@Override
+	@Transactional
+	public List<Employee> getAllEmployees() {
+		return StudentDAO.getAllEmployees();
+	}
+
+	@Override
+	@Transactional
+	public void deleteEmployee(Integer employeeId) {
+		StudentDAO.deleteEmployee(employeeId);
+	}
+
+	public Employee getEmployee(int empid) {
+		return StudentDAO.getEmployee(empid);
+	}
+
+	public Employee updateEmployee(Employee employee) {
+		// TODO Auto-generated method stub
+		return StudentDAO.updateEmployee(employee);
+	}
+
+	public void setEmployeeDAO(EmployeeDAO employeeDAO) {
+		this.StudentDAO = employeeDAO;
+	}
+
+}

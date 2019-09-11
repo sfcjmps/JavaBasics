@@ -1,0 +1,7 @@
+package com.hcl.student.dao;
+
+import com.hcl.student.model.Student;
+
+public class StudentDaoImpl implements StudentDao{
+	
+}

@@ -1,0 +1,26 @@
+package com.hcl.student.dao;
+
+import org.hibernate.SessionFactory;
+
+import com.hcl.student.controller.HibernateUtil;
+import com.hcl.student.model.Student;
+
+public class StudentDaoImpl implements StudentDao{
+
+	public boolean addStudent(Student st) {
+		SessionFactory sf = HibernateUtil.getConnection();
+		
+		return false;
+	}
+
+	public boolean updateStudent(Student st) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public Student getStudent(int Rollnum) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

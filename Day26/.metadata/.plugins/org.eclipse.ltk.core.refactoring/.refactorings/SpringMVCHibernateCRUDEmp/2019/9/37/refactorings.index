@@ -1,0 +1,16 @@
+1568175046179	Copy file
+1568175425504	Copy file
+1568175986220	Copy file
+1568181775275	Rename resource 'EmployeeForm.jsp'
+1568182268175	Rename type 'EmployeeServiceImpl'
+1568182365314	Rename field 'employeeDAO'
+1568182404491	Rename type 'EmployeeService'
+1568182429990	Rename method 'addEmployee'
+1568182464956	Rename method 'getAllEmployees'
+1568182481458	Rename method 'deleteEmployee'
+1568182507319	Rename type 'Employee'
+1568182528120	Rename method 'getEmployee'
+1568182542108	Rename method 'updateEmployee'
+1568182705436	Rename type 'EmployeeDAO'
+1568182802912	Rename compilation unit 'EmployeeDAOImpl.java'
+1568183464900	Rename type 'EmployeeController'

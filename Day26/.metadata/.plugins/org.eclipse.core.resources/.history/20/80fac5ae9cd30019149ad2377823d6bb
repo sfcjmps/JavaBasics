@@ -1,0 +1,25 @@
+package com.hcl.student.model;
+
+import java.sql.Date;
+import java.util.Date;
+
+public class Student {
+	private int Rollnum;
+	private String sName;
+	private int Age;
+	private String Gender;
+	private String Country;
+	private Date dateOfJoin;
+	
+}
+
+
+
+
+Rollnum int primary key,
+sName varchar(30),
+Age int,
+Gender varchar(10),
+Country varchar(20),
+dateOfJoin date,
+finalScore float

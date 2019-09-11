@@ -1,0 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ taglib uri = "http://www.springframework.org/tags/form" prefix = "springForm" %>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<springForm:form method = "post" commandpath = "Student" action = "/addStudent">
+	<center>
+		Roll No :
+		<springForm:input type = "text" path = "rollNo" /><br/><br/>
+		Student path :
+		<springForm:input type = "text" path = "name" /><br/><br/>
+		Age :
+		<springForm:input type = "number" path = "age" /><br/><br/>
+		Gender :
+		<springForm:input type = "radio" path = "gender" value = "Male" />Male<br/><br/>
+		<springForm:input type = "radio" path = "gender" value = "Female" />Female<br/><br/>
+		Country :
+		<select>
+		<option>Select One Option</option>
+		<option value = "India">India</option>
+		<option value = "USA">USA</option>
+		<option value = "Australia">Australia</option>
+		<option value = "Europe">Europe</option>
+		<option value = "NewZealand">NewZealand</option>
+		</select><br/><br/>
+		Date Of Join :
+		<springForm:input type = "date" path = "dateOfJoin" /><br/><br/>
+		Final Score :
+		<springForm:input type = "text" path = "finalScore" /><br/><br/>
+		<input type = "submit" value = "Insert" />
+	</center>
+</springForm:form>
+</body>
+</html>

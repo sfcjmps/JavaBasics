@@ -1,0 +1,24 @@
+package com.hcl.student.service;
+
+import com.hcl.student.dao.StudentDao;
+import com.hcl.student.dao.StudentDaoImpl;
+import com.hcl.student.model.Student;
+
+public class StudentServiceImpl implements StudentService {
+
+	public boolean addStudent(Student st) {
+		boolean b = new StudentDaoImpl().addStudent(st);
+		return b;
+	}
+
+	public boolean updateStudent(Student st) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public Student getStudent(int Rollnum) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

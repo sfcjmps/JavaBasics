@@ -1,0 +1,17 @@
+package com.jwt.dao;
+
+import java.util.List;
+import com.jwt.model.Student;
+
+public interface EmployeeDAO {
+
+	public void addEmployee(Student employee);
+
+	public List<Student> getAllEmployees();
+
+	public void deleteEmployee(Integer employeeId);
+
+	public Student updateEmployee(Student employee);
+
+	public Student getEmployee(int employeeid);
+}
