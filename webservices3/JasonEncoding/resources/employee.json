@@ -1,0 +1,31 @@
+{
+  "employees": [
+    {
+      "employee": {
+        "empno": 1,
+        "name": "sai",
+        "salary": 1000,
+        "band": "e",
+        "dateofjoin": "2019-09-18"
+      }
+    },
+    {
+      "employee": {
+        "empno": 2,
+        "name": "uttam",
+        "salary": 10000,
+        "band": "m",
+        "dateofjoin": "2019-09-18"
+      }
+    },
+    {
+      "employee": {
+        "empno": 3,
+        "name": "yash",
+        "salary": 1,
+        "band": "a",
+        "dateofjoin": "2019-09-18"
+      }
+    }
+  ]
+}
