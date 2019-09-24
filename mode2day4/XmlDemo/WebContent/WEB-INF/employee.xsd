@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="employees">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="employee" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="empno">
+								<xs:simpleType>
+									<xs:restriction base="xs:integer">
+										<xs:minInclusive value="1" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="empname" type="xs:string" />
+							<xs:element name="salary" type="xs:float" />
+							<xs:element name="band">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:pattern value="[CEM]" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="dateofjoin">
+								<xs:simpleType>
+									<xs:restriction base="xs:date">
+										<xs:minInclusive value="2019-09-18" fixed="true" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+
+
+
